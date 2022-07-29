@@ -1,22 +1,20 @@
 <template>
-    <div class="box has-text-weight-bold" :style="estilos">
+  <div class="box has-text-weight-bold">
     <slot></slot>
-   </div>
+  </div>
 </template>
 
 <script lang="ts">
-  import { defineComponent } from 'vue';
+import { defineComponent } from 'vue';
 
-  export default defineComponent ({
-    // eslint-disable-next-line vue/multi-word-component-names
-    name: 'Box',
-
-    data () {
-      return {
-        estilos: {
-          backgroundColor: '#faf0ca',
-        }
-      }
-    }
-  });
+export default defineComponent({
+  // eslint-disable-next-line vue/multi-word-component-names
+  name: 'Box'
+});
 </script>
+
+<style scoped>
+.box {
+  background: #FAF0CA;
+}
+</style>
